@@ -58,8 +58,7 @@ function findEvens(arr) {
   }
   return evens;
 }
-
-console.log(findEvens([1, 2, 3, 4, 5, 6])); 
+console.log(findEvens([1, 2, 3, 4, 5, 6, 7])); 
 
 
 function isPalindrome(str) {
