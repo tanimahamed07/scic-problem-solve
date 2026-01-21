@@ -1,51 +1,44 @@
-
-
-
 function countVowels(stry) {
-    let count = 0;
-    let vowels = "aeiouAEIOU";
-    for (let i = 0; i < stry.length; i++) {
-        if (vowels.includes(stry[i])) {
-            count++;
-        }
+  let count = 0;
+  let vowels = "aeiouAEIOU";
+  for (let i = 0; i < stry.length; i++) {
+    if (vowels.includes(stry[i])) {
+      count++;
     }
-    return count;
+  }
+  return count;
 }
 
-console.log(countVowels("programming")); 
-
+console.log(countVowels("programming"));
 
 function findMax(arr) {
-    let max = arr[0];
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] > max) {
-            max = arr[i];
-        }
+  let max = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
     }
-    return max;
+  }
+  return max;
 }
 
-console.log(findMax([5, 1, 9, 3])); 
-
-
+console.log(findMax([5, 1, 9, 3]));
 
 function removeDuplicates(arr) {
-    let uniqueArr = [];
-    for (let i = 0; i < arr.length; i++) {
-        if (!uniqueArr.includes(arr[i])) {
-            uniqueArr.push(arr[i]);
-        }
+  let uniqueArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (!uniqueArr.includes(arr[i])) {
+      uniqueArr.push(arr[i]);
     }
-    return uniqueArr;
+  }
+  return uniqueArr;
 }
 
-
 function reverseString(str) {
-    let reversed = "";
-    for (let i = str.length - 1; i >= 0; i--) {
-        reversed += str[i];
-    }
-    return reversed;
+  let reversed = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+  }
+  return reversed;
 }
 console.log(reverseString("hello"));
 
@@ -58,8 +51,7 @@ function findEvens(arr) {
   }
   return evens;
 }
-console.log(findEvens([1, 2, 3, 4, 5, 6, 7])); 
-
+console.log(findEvens([1, 2, 3, 4, 5, 6, 7, 9]));
 
 function isPalindrome(str) {
   let reversed = "";
@@ -69,14 +61,10 @@ function isPalindrome(str) {
   return str === reversed;
 }
 
-console.log(isPalindrome("madam")); 
-console.log(isPalindrome("hello")); 
-
-
-
+console.log(isPalindrome("madam"));
+console.log(isPalindrome("hello"));
 
 console.log(removeDuplicates([1, 2, 2, 3, 4, 4]));
-
 
 function sumArray(arr) {
   let sum = 0;
@@ -86,12 +74,7 @@ function sumArray(arr) {
   return sum;
 }
 
-console.log(sumArray([1, 2, 3, 4])); 
-
-
-
-
-
+console.log(sumArray([1, 2, 3, 4]));
 
 function capitalizeWords(str) {
   let words = str.split(" ");
@@ -101,7 +84,7 @@ function capitalizeWords(str) {
   return words.join(" ");
 }
 
-console.log(capitalizeWords("hello world")); 
+console.log(capitalizeWords("hello world"));
 
 function findFactorial(num) {
   let result = 1;
@@ -111,8 +94,7 @@ function findFactorial(num) {
   return result;
 }
 
-console.log(findFactorial(5)); 
-
+console.log(findFactorial(5));
 
 function pingPong() {
   for (let i = 1; i <= 20; i++) {
