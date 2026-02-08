@@ -51,7 +51,7 @@ function findEvens(arr) {
   }
   return evens;
 }
-console.log(findEvens([1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 13, 15, 17, 18]));
+console.log(findEvens([1, 2, 7, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 13, 15, 17, 18]));
 
 function isPalindrome(str) {
   let reversed = "";
